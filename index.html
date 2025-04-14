@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>LOWCODE</title>
+
+</head>
+
+<body>
+    <button class="menu-button" onclick="toglleMenu()">☰ Menu</button>
+    <nav id="menu">
+        <ul>
+            <a href="index.html" title="inicio">Inicio</a>
+            <a href="sobre.html" title="sobre a pagina">Sobre</a>
+            <a href="contatos.html" title="contatos">Contato</a>
+        </ul>
+    </nav>
+    <script>
+        function toglleMenu() {
+            const menu = document.getElementById("menu");
+            menu.style.display = (menu.style.display === "block") ? "none" : "block";
+
+        }
+    </script>
+
+    <header>
+        <img src="imagens/logo.png" alt="logo1" title="logo" class="logo">
+
+
+    </header>
+
+    <div class="game">
+        <iframe src="GameLowcode/index.html" class="game"></iframe>
+        <a href="GameLowcode/index.html" target="_blank" class="jogar-agora">JOGAR AGORA</a>
+
+    </div>
+
+
+</body>
+
+</html>
