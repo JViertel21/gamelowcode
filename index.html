@@ -1,44 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>LOWCODE</title>
+	<title>Novo projeto</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	
+	<!-- Made with Construct, the game and app creator :: https://www.construct.net -->
+	<meta name="generator" content="Scirra Construct">
 
-</head>
 
+
+	<link rel="manifest" href="appmanifest.json">
+	<link rel="apple-touch-icon" sizes="128x128" href="icons/icon-128.png">
+	<link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png">
+	<link rel="apple-touch-icon" sizes="512x512" href="icons/icon-512.png">
+	<link rel="icon" type="image/png" href="icons/icon-512.png">
+
+	<link rel="stylesheet" href="style.css">
+
+
+
+</head> 
+ 
 <body>
-    <button class="menu-button" onclick="toglleMenu()">☰ Menu</button>
-    <nav id="menu">
-        <ul>
-            <a href="index.html" title="inicio">Inicio</a>
-            <a href="sobre.html" title="sobre a pagina">Sobre</a>
-            <a href="contatos.html" title="contatos">Contato</a>
-        </ul>
-    </nav>
-    <script>
-        function toglleMenu() {
-            const menu = document.getElementById("menu");
-            menu.style.display = (menu.style.display === "block") ? "none" : "block";
 
-        }
-    </script>
+	
 
-    <header>
-        <img src="imagens/logo.png" alt="logo1" title="logo" class="logo">
+<script>
+if (location.protocol.substr(0, 4) === "file")
+{
+	alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");
+}
+</script>
+	
+	<noscript>
+		<div id="notSupportedWrap">
+			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
+			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
+		</div>
+	</noscript>
+	<script src="scripts/modernjscheck.js"></script>
+	<script src="scripts/supportcheck.js"></script>
+	<script src="scripts/offlineclient.js" type="module"></script>
+	<script src="scripts/main.js" type="module"></script>
+	<script src="scripts/register-sw.js" type="module"></script>
 
-
-    </header>
-
-    <div class="game">
-        <iframe src="GameLowcode/index.html" class="game"></iframe>
-        <a href="GameLowcode/index.html" target="_blank" class="jogar-agora">JOGAR AGORA</a>
-
-    </div>
-
-
-</body>
-
+</body> 
 </html>
